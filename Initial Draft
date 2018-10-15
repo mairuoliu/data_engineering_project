@@ -1,0 +1,30 @@
+Dataset: http://insideairbnb.com/get-the-data.html
+Kaggle project: https://www.kaggle.com/rudymizrahi/airbnb-listings-in-major-us-cities-deloitte-ml
+
+Objective: price trend
+
+Attributes to consider:
+	• Airbnb
+		○ License (PK)
+		○ Neighborhood (FK)
+		○ City (central, east, west)
+		○ Room type (beds) & size
+		○ Cancellation
+		○ Amenities
+	
+	• Listing
+		○ Listing id(PK)
+		○ License (FK)
+		○ Price
+		○ Time (year, season, month)
+		○ Length of rent
+		
+	• Neighborhood
+		○ Neighborhood (PK)
+		○ Attractions
+		○ Transportation
+		○ Safety
+		○ Shopping
+		
+	• Review
+    ○ NoSQL table
