@@ -1,30 +1,44 @@
-Dataset: http://insideairbnb.com/get-the-data.html
-Kaggle project: https://www.kaggle.com/rudymizrahi/airbnb-listings-in-major-us-cities-deloitte-ml
-
+Dataset: 
+	• 1st: http://insideairbnb.com/get-the-data.html
+		○ Chicago (from 2015 - 2018.10 by month) - listing.csv.gz
+	• 2nd: https://data.cityofchicago.org/Transportation/CTA-System-Information-List-of-L-Stops/8pix-ypme
+		○ CTA train stops
+         
 Objective: price trend
 
 Attributes to consider:
-	• Airbnb
-		○ License (PK)
-		○ Neighborhood (FK)
-		○ City (central, east, west)
-		○ Room type (beds) & size
+	• Airbnb - 1st dataset
+		○ License No.(PK)
+		○ Neighborhood Name(FK)
+		○ Room Type (beds) & Size
 		○ Cancellation
 		○ Amenities
+		○ Longitude
+		○ Latitude
 	
-	• Listing
+	• Listing - 1st dataset
 		○ Listing id(PK)
-		○ License (FK)
+		○ License(FK)
 		○ Price
-		○ Time (year, season, month)
+		○ Date(FK)
 		○ Length of rent
+		○ Review score
+		
+	• Date
+		○ Date(PK)
+		○ Year
+		○ Season
+		○ Month
 		
 	• Neighborhood
-		○ Neighborhood (PK)
-		○ Attractions
-		○ Transportation
-		○ Safety
-		○ Shopping
+		○ Neighborhood Name(PK)
 		
-	• Review
-    ○ NoSQL table
+	• CTA Train Stop - 2nd dataset
+		○ Stop ID(PK)
+		○ Stop Name
+		○ Train Color 
+		○ Longitude
+		○ Latitude
+		○ Neighborhood Name (FK) - we need to do reverse geocoding to get the neighborhood informaiton
+		
+	• Review (NoSQL table)
