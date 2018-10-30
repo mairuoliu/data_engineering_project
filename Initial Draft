@@ -8,37 +8,45 @@ Objective: price trend
 
 Attributes to consider:
 	• Airbnb - 1st dataset
-		○ License No.(PK)
-		○ Neighborhood Name(FK)
-		○ Room Type (beds) & Size
-		○ Cancellation
-		○ Amenities
+		○ License_id(PK) - [we need to delete rows whose license id is "pending"]
+		○ Neighborhood_id(FK)
 		○ Longitude
 		○ Latitude
+		○ Property_type
+		○ Room_type
+		○ Accommodates
+		○ Bathrooms
+		○ Bedrooms
+		○ Beds
+		○ Amenities
+		○ Square_feet [only a few rows has this information]
+		○ Cancellation_policy
+
 	
 	• Listing - 1st dataset
 		○ Listing id(PK)
 		○ License(FK)
 		○ Price
-		○ Date(FK)
-		○ Length of rent
-		○ Review score
+		○ Date_id(FK)
+		○ Minimum_nights
+		○ Maximum_nights
+		○ Number_of_reviews
+		○ Review_score
 		
 	• Date
-		○ Date(PK)
-		○ Year
-		○ Season
-		○ Month
+		○ Date_id(PK)
+		○ Scraped_date
 		
 	• Neighborhood
-		○ Neighborhood Name(PK)
+		○ Neighborhood_id(PK)
+		○ Name
 		
 	• CTA Train Stop - 2nd dataset
 		○ Stop ID(PK)
 		○ Stop Name
-		○ Train Color 
+		○ Train Color [we can use Excel Hlookup function to create this column]
 		○ Longitude
 		○ Latitude
-		○ Neighborhood Name (FK) - we need to do reverse geocoding to get the neighborhood informaiton
+		○ Neighborhood_id (FK) - we need to do reverse geocoding to get the neighborhood informaiton
 		
 	• Review (NoSQL table)
