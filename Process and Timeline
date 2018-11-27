@@ -22,6 +22,7 @@ Analysis:
 		○ Vertical
 			§ Time series? - research R function
 		○ MongoDB/Neo4j
+			§ NoSQL - text data 
 			§ If we have time, we can use MongoDB or Neo4j to analyze geographical info, for example, relationship between popular places in Chicago and listing price
 
 Visualization: - by Friday
