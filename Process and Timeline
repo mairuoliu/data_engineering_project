@@ -1,0 +1,28 @@
+Dataset: 
+	• 1st: http://insideairbnb.com/get-the-data.html
+		○ Chicago: 
+			§ listing.csv.gz
+			§ calendar.csv.gz
+	• 2nd: https://data.cityofchicago.org/Transportation/CTA-System-Information-List-of-L-Stops/8pix-ypme
+		○ CTA train stops
+ 
+Clean&Import Data(OpenRefine&SQL): - by Tuesday
+	• Listing - remove and format columns
+	• Calendar: 2017.5 - 2018.5 - group and format columns
+	• CAT train stops - reverse geocoding
+
+Analysis:
+	• SQL: - by Wednesday
+		○ Join tables/create views
+		○ EER/Snowflake
+	• R/Python: - by Thursday
+		○ Horizontal
+			§ lm fit model
+			§ drop1/contrast to optimize the model
+		○ Vertical
+			§ Time series? - research R function
+		○ MongoDB/Neo4j
+			§ If we have time, we can use MongoDB or Neo4j to analyze geographical info, for example, relationship between popular places in Chicago and listing price
+
+Visualization: - by Friday
+	• Tableau
